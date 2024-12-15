@@ -93,6 +93,8 @@ def _chans_algorithm(points, chan=True):
     
     # merged_hull.append(left_point)
 
+# linear scan to find the tangent
+# TODO: implement binary search
 def _find_tangent(hull, point):
   best = hull[0]
   for p in hull[1:]:
